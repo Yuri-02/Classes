@@ -8,6 +8,12 @@ public class ClassesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ClassesApplication.class, args);
+
+		Livro id = new Livro();
+
+		id.setId(1);
+		System.out.println(id.getId());
 	}
+
 
 }
