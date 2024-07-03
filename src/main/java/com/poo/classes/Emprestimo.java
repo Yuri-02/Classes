@@ -6,7 +6,7 @@ public class Emprestimo {
     private int id;
     private LocalDate dataEmprestimo;
     private LocalDate dataPrevisaoDevolucao;
-    private Cliente cliente;
+    private Pessoa cliente;
 
     public int getId(){
         return id;
@@ -32,11 +32,11 @@ public class Emprestimo {
         this.dataPrevisaoDevolucao = dataPrevisaoDevolucao;
     }
 
-    public Cliente getCliente(){
+    public Pessoa getCliente(){
         return cliente;
     }
 
-    public void setCliente(Cliente cliente){
+    public void setCliente(Pessoa cliente){
         this.cliente = cliente;
     }
 }

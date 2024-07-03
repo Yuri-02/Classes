@@ -1,12 +1,25 @@
 package com.poo.classes;
 
 
-public class Cliente {
+public class Pessoa {
+    private static int contador = 1;
+    
     private int id;
     private String nome;
     private String rg;
     private String cpf;
     private Endereco endereco;
+    
+
+
+    // Cosntrutores
+    public Pessoa(String nome, String cpf, Endereco endereco){
+        this.nome = nome;
+        setCpf(cpf);
+        this.endereco = endereco;
+        this.id = contador;
+        contador++;
+    }
 
     public int getId(){
         return id;

@@ -1,8 +1,17 @@
 package com.poo.classes;
 
 public class Editora {
+    private static int contador = 1;
+    
     private int id;
     private String nome;
+    
+
+    public Editora(String nome){
+        this.nome = nome;
+        this.id = contador;
+        contador++;
+    }
 
     public int getId(){
         return id;

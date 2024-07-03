@@ -1,12 +1,22 @@
 package com.poo.classes;
 
 public class Endereco {
+    private static int contador = 1;
+    
     private int id;
     private String tipo;
     private String logradouro;
     private String complemento;
     private String cidade;
     private String uf;
+    private String cep;
+    
+
+    public Endereco(String cep){
+        this.cep = cep;
+        this.id = contador;
+        contador++;
+    }
 
     public int getId(){
         return id;
@@ -54,6 +64,14 @@ public class Endereco {
 
     public void setUf(String uf){
         this.uf = uf;
+    }
+
+    public String getCep(){
+        return cep;
+    }
+
+    public void setCep(String cep){
+        this.cep = cep;
     }
 
 }
